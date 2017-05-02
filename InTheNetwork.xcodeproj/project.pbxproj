@@ -13,7 +13,50 @@
 		5313A67C1EB39CC900AB4AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5313A67A1EB39CC900AB4AF8 /* Main.storyboard */; };
 		5313A67E1EB39CC900AB4AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5313A67D1EB39CC900AB4AF8 /* Assets.xcassets */; };
 		5313A6811EB39CC900AB4AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5313A67F1EB39CC900AB4AF8 /* LaunchScreen.storyboard */; };
+		5313A68A1EB39CF400AB4AF8 /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5313A6881EB39CF400AB4AF8 /* Socket.cpp */; };
+		5313A6A31EB4178000AB4AF8 /* TCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5313A6A21EB4178000AB4AF8 /* TCPServer.m */; };
+		5313A6A51EB4182100AB4AF8 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5313A6A41EB4182100AB4AF8 /* CocoaAsyncSocket.framework */; };
+		5313A6A61EB4182100AB4AF8 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5313A6A41EB4182100AB4AF8 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5313A6AA1EB4198300AB4AF8 /* TCPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5313A6A91EB4198300AB4AF8 /* TCPClient.m */; };
+		531B06AA1EB5E7E5001B22AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B06A91EB5E7E5001B22AF /* AppDelegate.m */; };
+		531B06AD1EB5E7E5001B22AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B06AC1EB5E7E5001B22AF /* main.m */; };
+		531B06B01EB5E7E5001B22AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B06AF1EB5E7E5001B22AF /* ViewController.m */; };
+		531B06B21EB5E7E5001B22AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 531B06B11EB5E7E5001B22AF /* Assets.xcassets */; };
+		531B06B51EB5E7E5001B22AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531B06B31EB5E7E5001B22AF /* Main.storyboard */; };
+		531B06BE1EB5E80C001B22AF /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531B06BD1EB5E80C001B22AF /* CocoaAsyncSocket.framework */; };
+		531B06BF1EB5E80C001B22AF /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 531B06BD1EB5E80C001B22AF /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		531B06C11EB5E9B1001B22AF /* TCPServer.h in Sources */ = {isa = PBXBuildFile; fileRef = 5313A6A11EB4178000AB4AF8 /* TCPServer.h */; };
+		531B06C21EB5E9B1001B22AF /* TCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5313A6A21EB4178000AB4AF8 /* TCPServer.m */; };
+		531B06C31EB5E9B1001B22AF /* TCPClient.h in Sources */ = {isa = PBXBuildFile; fileRef = 5313A6A81EB4198300AB4AF8 /* TCPClient.h */; };
+		531B06C41EB5E9B1001B22AF /* TCPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5313A6A91EB4198300AB4AF8 /* TCPClient.m */; };
+		531B06C71EB6389D001B22AF /* UDPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B06C61EB6389D001B22AF /* UDPServer.m */; };
+		531B06CA1EB63A0B001B22AF /* UDPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B06C91EB63A0B001B22AF /* UDPClient.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5313A6A71EB4182100AB4AF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5313A6A61EB4182100AB4AF8 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531B06C01EB5E80C001B22AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				531B06BF1EB5E80C001B22AF /* CocoaAsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5313A66E1EB39CC900AB4AF8 /* InTheNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTheNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +69,27 @@
 		5313A67D1EB39CC900AB4AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5313A6801EB39CC900AB4AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5313A6821EB39CC900AB4AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5313A6881EB39CF400AB4AF8 /* Socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
+		5313A6891EB39CF400AB4AF8 /* Socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Socket.hpp; sourceTree = "<group>"; };
+		5313A6A11EB4178000AB4AF8 /* TCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServer.h; sourceTree = "<group>"; };
+		5313A6A21EB4178000AB4AF8 /* TCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPServer.m; sourceTree = "<group>"; };
+		5313A6A41EB4182100AB4AF8 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = ../Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		5313A6A81EB4198300AB4AF8 /* TCPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPClient.h; sourceTree = "<group>"; };
+		5313A6A91EB4198300AB4AF8 /* TCPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPClient.m; sourceTree = "<group>"; };
+		531B06A61EB5E7E5001B22AF /* Network-Cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network-Cocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		531B06A81EB5E7E5001B22AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		531B06A91EB5E7E5001B22AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		531B06AC1EB5E7E5001B22AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		531B06AE1EB5E7E5001B22AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		531B06AF1EB5E7E5001B22AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		531B06B11EB5E7E5001B22AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		531B06B41EB5E7E5001B22AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		531B06B61EB5E7E5001B22AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		531B06BD1EB5E80C001B22AF /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = ../Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		531B06C51EB6389D001B22AF /* UDPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPServer.h; sourceTree = "<group>"; };
+		531B06C61EB6389D001B22AF /* UDPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPServer.m; sourceTree = "<group>"; };
+		531B06C81EB63A0B001B22AF /* UDPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPClient.h; sourceTree = "<group>"; };
+		531B06C91EB63A0B001B22AF /* UDPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +97,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5313A6A51EB4182100AB4AF8 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531B06A31EB5E7E5001B22AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531B06BE1EB5E80C001B22AF /* CocoaAsyncSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5313A6701EB39CC900AB4AF8 /* InTheNetwork */,
+				531B06A71EB5E7E5001B22AF /* Network-Cocoa */,
 				5313A66F1EB39CC900AB4AF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				5313A66E1EB39CC900AB4AF8 /* InTheNetwork.app */,
+				531B06A61EB5E7E5001B22AF /* Network-Cocoa.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +133,7 @@
 		5313A6701EB39CC900AB4AF8 /* InTheNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				5313A6A41EB4182100AB4AF8 /* CocoaAsyncSocket.framework */,
 				5313A6741EB39CC900AB4AF8 /* AppDelegate.h */,
 				5313A6751EB39CC900AB4AF8 /* AppDelegate.m */,
 				5313A6771EB39CC900AB4AF8 /* ViewController.h */,
@@ -67,6 +143,16 @@
 				5313A67F1EB39CC900AB4AF8 /* LaunchScreen.storyboard */,
 				5313A6821EB39CC900AB4AF8 /* Info.plist */,
 				5313A6711EB39CC900AB4AF8 /* Supporting Files */,
+				5313A6881EB39CF400AB4AF8 /* Socket.cpp */,
+				5313A6891EB39CF400AB4AF8 /* Socket.hpp */,
+				5313A6A11EB4178000AB4AF8 /* TCPServer.h */,
+				5313A6A21EB4178000AB4AF8 /* TCPServer.m */,
+				5313A6A81EB4198300AB4AF8 /* TCPClient.h */,
+				5313A6A91EB4198300AB4AF8 /* TCPClient.m */,
+				531B06C51EB6389D001B22AF /* UDPServer.h */,
+				531B06C61EB6389D001B22AF /* UDPServer.m */,
+				531B06C81EB63A0B001B22AF /* UDPClient.h */,
+				531B06C91EB63A0B001B22AF /* UDPClient.m */,
 			);
 			path = InTheNetwork;
 			sourceTree = "<group>";
@@ -75,6 +161,30 @@
 			isa = PBXGroup;
 			children = (
 				5313A6721EB39CC900AB4AF8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		531B06A71EB5E7E5001B22AF /* Network-Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				531B06BD1EB5E80C001B22AF /* CocoaAsyncSocket.framework */,
+				531B06A81EB5E7E5001B22AF /* AppDelegate.h */,
+				531B06A91EB5E7E5001B22AF /* AppDelegate.m */,
+				531B06AE1EB5E7E5001B22AF /* ViewController.h */,
+				531B06AF1EB5E7E5001B22AF /* ViewController.m */,
+				531B06B11EB5E7E5001B22AF /* Assets.xcassets */,
+				531B06B31EB5E7E5001B22AF /* Main.storyboard */,
+				531B06B61EB5E7E5001B22AF /* Info.plist */,
+				531B06AB1EB5E7E5001B22AF /* Supporting Files */,
+			);
+			path = "Network-Cocoa";
+			sourceTree = "<group>";
+		};
+		531B06AB1EB5E7E5001B22AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				531B06AC1EB5E7E5001B22AF /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -89,6 +199,7 @@
 				5313A66A1EB39CC900AB4AF8 /* Sources */,
 				5313A66B1EB39CC900AB4AF8 /* Frameworks */,
 				5313A66C1EB39CC900AB4AF8 /* Resources */,
+				5313A6A71EB4182100AB4AF8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +208,24 @@
 			name = InTheNetwork;
 			productName = InTheNetwork;
 			productReference = 5313A66E1EB39CC900AB4AF8 /* InTheNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		531B06A51EB5E7E5001B22AF /* Network-Cocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 531B06B91EB5E7E5001B22AF /* Build configuration list for PBXNativeTarget "Network-Cocoa" */;
+			buildPhases = (
+				531B06A21EB5E7E5001B22AF /* Sources */,
+				531B06A31EB5E7E5001B22AF /* Frameworks */,
+				531B06A41EB5E7E5001B22AF /* Resources */,
+				531B06C01EB5E80C001B22AF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Network-Cocoa";
+			productName = "Network-Cocoa";
+			productReference = 531B06A61EB5E7E5001B22AF /* Network-Cocoa.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,6 +238,11 @@
 				ORGANIZATIONNAME = reeonce;
 				TargetAttributes = {
 					5313A66D1EB39CC900AB4AF8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L8WRN24LQD;
+						ProvisioningStyle = Automatic;
+					};
+					531B06A51EB5E7E5001B22AF = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -128,6 +262,7 @@
 			projectRoot = "";
 			targets = (
 				5313A66D1EB39CC900AB4AF8 /* InTheNetwork */,
+				531B06A51EB5E7E5001B22AF /* Network-Cocoa */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +278,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		531B06A41EB5E7E5001B22AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531B06B21EB5E7E5001B22AF /* Assets.xcassets in Resources */,
+				531B06B51EB5E7E5001B22AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,9 +294,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5313A6AA1EB4198300AB4AF8 /* TCPClient.m in Sources */,
+				5313A68A1EB39CF400AB4AF8 /* Socket.cpp in Sources */,
+				531B06C71EB6389D001B22AF /* UDPServer.m in Sources */,
 				5313A6791EB39CC900AB4AF8 /* ViewController.m in Sources */,
 				5313A6761EB39CC900AB4AF8 /* AppDelegate.m in Sources */,
+				5313A6A31EB4178000AB4AF8 /* TCPServer.m in Sources */,
+				531B06CA1EB63A0B001B22AF /* UDPClient.m in Sources */,
 				5313A6731EB39CC900AB4AF8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531B06A21EB5E7E5001B22AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531B06C11EB5E9B1001B22AF /* TCPServer.h in Sources */,
+				531B06C21EB5E9B1001B22AF /* TCPServer.m in Sources */,
+				531B06C31EB5E9B1001B22AF /* TCPClient.h in Sources */,
+				531B06C41EB5E9B1001B22AF /* TCPClient.m in Sources */,
+				531B06B01EB5E7E5001B22AF /* ViewController.m in Sources */,
+				531B06AD1EB5E7E5001B22AF /* main.m in Sources */,
+				531B06AA1EB5E7E5001B22AF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +336,14 @@
 				5313A6801EB39CC900AB4AF8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		531B06B31EB5E7E5001B22AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				531B06B41EB5E7E5001B22AF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -274,6 +445,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L8WRN24LQD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = InTheNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reeonce.InTheNetwork;
@@ -285,10 +461,55 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L8WRN24LQD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = InTheNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reeonce.InTheNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		531B06B71EB5E7E5001B22AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "Network-Cocoa/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reeonce.Network-Cocoa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		531B06B81EB5E7E5001B22AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "Network-Cocoa/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reeonce.Network-Cocoa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -309,6 +530,15 @@
 			buildConfigurations = (
 				5313A6861EB39CC900AB4AF8 /* Debug */,
 				5313A6871EB39CC900AB4AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		531B06B91EB5E7E5001B22AF /* Build configuration list for PBXNativeTarget "Network-Cocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531B06B71EB5E7E5001B22AF /* Debug */,
+				531B06B81EB5E7E5001B22AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
